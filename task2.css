@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+	  margin: 0;
+	padding: 0;
+  }
+  body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background: #030303;
+	
+  }
+  .background {
+	background-image: linear-gradient(to bottom,transparent 40%,rgba(0,0,0,0.95) 70%, #000C66), url("https://cdn.britannica.com/08/135708-050-2346C1CF/Paradise-Bay-Antarctica.jpg");
+	width: 100vw;
+	height: 100vh;
+	background-position: top;
+	z-index: 1;
+	position: relative;
+	box-shadow: 0 50px 50px black;
+  }
+  h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	z-index: 100;
+	font-family: 'Gruppo', cursive;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	font-size: 3rem;
+	color: white;
+	text-shadow: 2px 2px 5px;
+  }
+  .layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+  .layer-1 {
+	background-image: linear-gradient(to bottom,transparent 50%,rgba(0, 0, 0.5,0.85) 70%, #000C66), url("https://i.imgur.com/bwEm8WB.png");
+	z-index: 70;
+  }
+  .layer-2 {
+	background-image: linear-gradient(to bottom,transparent 30%,rgba(0,0,0.5,0) 80%, #000C66), url("https://nypost.com/wp-content/uploads/sites/2/2021/04/earth-axis-35.jpg");
+	z-index: 80;
+  }
+  .layer-3 {
+	
+	
+   
+	
+	
+	
+	background-image: 
+	  linear-gradient(to bottom,transparent 60%,rgba(0, 0,0,0.85)), url("https://www.seekpng.com/png/full/1-15908_mountain-png.png");
+	z-index: 90;
+  }
+  .content {
+	font-size: 1.2rem;
+	line-height: 1.7;
+	position: relative;
+	background-image: url("https://cdn.britannica.com/08/135708-050-2346C1CF/Paradise-Bay-Antarctica.jpg?w=1500");
+	background-size: cover;
+	background-attachment: fixed;
+  }
+  .text {
+	padding: 4rem 10rem 20rem 40rem;
+  }
+  .rock {
+	background-image: url("https://www.seekpng.com/png/full/12-124258_polar-bear-transparent-background.png");
+	width: 35vw;
+	height: 70vh;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-position: left center;
+	-webkit-transform: scaleX(1)
+	transform: scaleX(1)
+  }
+  .rocks {
+	position: absolute;
+	z-index: 1000;
+  }
+  .rock-1 {
+   width: 150px;
+   height: 100px;
+   left: 10%;
+   top: 30%;
+  }
+  .rock-2 {
+	width: 150x;
+	height: 120px;
+	left: 20%;
+	top: 20%;
+  }
+  .rock-3 {
+	width: 300px;
+	height: 300px;
+	left: 15%;
+	bottom: 30%;
+  }
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 1200px) {
+	h1 {
+	  font-size: 2rem;
+	  letter-spacing: 0.1rem;
+	  text-align: center;
+	}
+	.rocks, .rock {
+	  display: none;
+	}
+	.text {
+	  padding: 0 3rem 5rem 3rem;
+	  
+	}
+   
+  }
